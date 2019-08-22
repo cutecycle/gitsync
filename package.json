@@ -1,0 +1,23 @@
+{
+  "name": "gitsync",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cutecycle/gitsync.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cutecycle/gitsync/issues"
+  },
+  "homepage": "https://github.com/cutecycle/gitsync#readme",
+  "dependencies": {
+    "chokidar-cli": "^2.0.0"
+  }
+}

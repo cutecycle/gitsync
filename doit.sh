@@ -1,7 +1,6 @@
 set -x
 
-rsync --exclude=".gitsync" -artv . .gitsync 
-then
+rsync --exclude=".gitsync" -a . .gitsync 
 	cd .gitsync
 	git status
 	git branch -m $(hostname)-auto
@@ -9,4 +8,3 @@ then
 	git commit -m "Auto commit"
 	git push -f --set-upstream origin $(hostname)-auto
 
-fi
