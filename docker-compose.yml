@@ -1,0 +1,13 @@
+version: '3'
+services:
+  syncer:
+    image: "ninaaaaaaaa/gitsync"
+    restart: always
+    command: entrypoint.sh
+    working_dir: /git
+    environment:
+      - HOSTNAME=unnamed_gitsync
+    volumes:
+      - ~/.ssh/:/root/.ssh
+      - ./:/git
+      - ~/.gitconfig:/etc/gitconfig
