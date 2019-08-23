@@ -1,5 +1,3 @@
-
-#chokidar "*" -i .git -i .gitsync  -c ./doit.sh
 set -x
 cp -r /tempssh/* ~/.ssh
 chmod 400 ~/.ssh/*
@@ -11,5 +9,5 @@ ssh-keyscan -H github.com >> ~/.ssh/known_hosts
 while true
 do
 sleep 1
-./doit.sh
+/bin/doit.sh
 done
