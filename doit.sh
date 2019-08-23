@@ -1,6 +1,5 @@
 set -x
-
-rsync --exclude=".gitsync" -av . .gitsync 
+rsync --exclude=".gitsync" -a . .gitsync 
 cd .gitsync
 git status
 git branch -m $HOSTNAME-auto
