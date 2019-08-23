@@ -1,7 +1,7 @@
 version: '3'
 services:
   syncer:
-    image: "ninaaaaaaaa/gitsync"
+    image: "ninaaaaaaaa/gitsync:latest"
     restart: always
     working_dir: /git
     environment:
