@@ -8,6 +8,6 @@ services:
     environment:
       - HOSTNAME=unnamed_gitsync
     volumes:
-      - ~/.ssh/:/root/.ssh
+      - ~/.ssh/:/tempssh
       - ./:/git
       - ~/.gitconfig:/etc/gitconfig
